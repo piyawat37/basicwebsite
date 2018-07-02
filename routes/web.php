@@ -20,3 +20,20 @@ Route::get('/contact', 'pageController@getContact');
 Route::get('/messages', 'MessagesController@getMessages');
 
 Route::post('/contact/submit', 'MessagesController@submit');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::resource('users', 'UserController');
+Route::resource('roles', 'RoleController');
+Route::resource('posts', 'PostController');
+Route::resource('permissions','PermissionController');
