@@ -13,10 +13,10 @@ class Permission extends \Spatie\Permission\Models\Permission
   public static function defaultPermissions()
   {
       return [
-          'View Post',
-          'Add Post',
+          'Create Post',
           'Edit Post',
           'Delete Post',
+          'Administer roles & permissions',
       ];
   }
 }
