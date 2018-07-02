@@ -23,15 +23,7 @@ Route::post('/contact/submit', 'MessagesController@submit');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'PostController@index')->name('home');
 
 Route::resource('users', 'UserController');
 Route::resource('roles', 'RoleController');
